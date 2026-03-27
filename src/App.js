@@ -11,7 +11,8 @@ function App() {
       alert("Por favor, preencha o nome e o valor.");
       return;
     }
-    alert(`Orçamento MetalCar Pro\nCliente: ${cliente}\nServiço: ${servico}\nValor: R$ ${valor}`);
+    const msg = `MetalCar Pro\nCliente: ${cliente}\nServiço: ${servico}\nValor: R$ ${valor}`;
+    alert(msg);
   };
 
   return (
@@ -30,9 +31,9 @@ function App() {
         <select value={servico} onChange={(e) => setServico(e.target.value)}>
           <option value="">Selecione o Serviço</option>
           <option value="Polimento Comercial">Polimento Comercial</option>
-          <option value="Vitrificaçao">Vitrificação</option>
+          <option value="Vitrificação">Vitrificação</option>
           <option value="Martelinho de Ouro">Martelinho de Ouro</option>
-          <option value="Higienização Interna">Higienização Interna</option>
+          <option value="Higienização">Higienização</option>
         </select>
         <input 
           type="number" 
